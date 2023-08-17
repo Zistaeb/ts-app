@@ -8,3 +8,9 @@ export interface CreateProductDto extends Omit <Product, 'id' | 'createData' | '
 //Contrario del Omit (Escoger los campos que se necesitan)
 
 type example = Pick <Product, 'color' | 'description'>;
+
+//type UpdateProductDto = Partial<Product>;     //Pone todos los atributos de "Product" como opcionales
+
+export interface UpdateProductDto extends Partial<CreateProductDto> {};
+
+type example2 = Required<Product>;              //Contrario de Partial, que todo sea requerido
