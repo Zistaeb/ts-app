@@ -32,5 +32,8 @@ return products[index];
 };
 
 export const findProducts = (dto: FindProductDto): Product[] => {
+  //dto.tags = [];
+  //dto.tags?.pop();
+  //dto.tags?.push();
   return products;
 };

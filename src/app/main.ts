@@ -27,6 +27,7 @@ findProducts({
   color: 'red',
   createData: new Date(),
   isNew: true,
+  tags: ['a','b'],
 });
 
 
