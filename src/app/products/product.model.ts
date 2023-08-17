@@ -15,3 +15,7 @@ export interface Product extends BaseModel {
   isNew: boolean;
   tags?: string[];
 };
+
+//type CreateProductDto = Omit <Product, 'id' | 'createData' | 'updateData' | 'category'>;
+
+
