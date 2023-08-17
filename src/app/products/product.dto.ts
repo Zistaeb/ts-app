@@ -14,3 +14,7 @@ type example = Pick <Product, 'color' | 'description'>;
 export interface UpdateProductDto extends Partial<CreateProductDto> {};
 
 type example2 = Required<Product>;              //Contrario de Partial, que todo sea requerido
+
+export interface FindProductDto extends Readonly<Partial<Product>> {};
+
+type example3 = Readonly<Product>;
